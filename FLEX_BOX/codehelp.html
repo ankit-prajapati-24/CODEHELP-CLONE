@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+      <!-- <script src="stylesheet.css"></script> -->
+      <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Rubik,sans-serif;
+    /* position: relative; */
+}
+html{
+    overflow-x: hidden;
+} 
+ body{
+    
+    /* display: flex; */
+    /* gap: 100px; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow-x: hidden;
+} 
+a{
+    text-decoration: none;
+}
+.navbar-head{
+    /* padding-right: 500px; */
+    /* padding-left:500px ; */
+    /* position: fixed; */
+    border: 2px solid black;
+    background-image: linear-gradient(45deg,white,rgb(101, 101, 200));
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    padding-top: 20px;
+}
+header{
+    /* position: fixed; */
+    /* background-image: linear-gradient(45deg,white,rgb(101, 101, 200)); */
+    /* background-image: 25,white,rgb(101, 101, 200); */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-class{
+    
+    /* padding-top: 10px; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-left:30px; */
+}
+.navbar-list_item{
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navabar-link{
+    
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    transition: all 0.3s;
+}
+.navbar-list_item2{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    /* margin-top: 10px; */
+    margin-right: 40px;
+}
+.navabar-link2{
+  
+    text-decoration: none;
+    list-style: none;
+    color: black;
+
+}
+.navabar-link:hover{
+    cursor: pointer;
+    color: rgb(36, 46, 185);
+}
+.mobile_navr-icon{
+    height: 20px;
+    width: 30px;
+}
+.mobile_navr-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mobile_navr-icon[name="close-circle-outline"]{
+    display: none;
+}
+.flexbox1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid rgb(63, 74, 156);
+ width: 100px;
+ height: 25px;
+ border-radius: 3px;
+ font-size: small;
+}
+.flexbox2{
+    display: flex;
+    color: white;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid rgb(13, 32, 179);
+ background-color: rgb(113, 113, 219);
+ width: 100px;
+ /* font-size: small; */
+ height: 25px;
+ border-radius: 2px;
+}
+.flexbox2 a{
+    color: white;
+}
+#DashBoard{
+    display: none;
+}
+#login{
+    display: none;
+}
+/* ***************************************************************************small navbar section  */
+.small-navbar-head{
+    /* margin-top: 60px; */
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-list_item-1{
+    
+    /* font-size: 200px !important; */
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100vw;
+    justify-content: space-evenly;
+    font-size: 20px;
+    align-items: center;
+}
+.navbar-list_item-1 li{
+    
+    font-size: 20px !important;
+    list-style: none;
+    font-size: 20px;
+}
+.small-flexbox1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid rgb(63, 74, 156);
+ width: 200px;
+ height: 60px;
+ border-radius: 4px;
+ font-size: small;
+
+}
+
+.small-flexbox2{
+    display: flex;
+    color: white;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid rgb(13, 32, 179);
+ background-color: rgb(113, 113, 219);
+ width: 200px;
+ /* transition: 5s; */
+ /* font-size: small; */
+ height: 60px;
+ border-radius:4px;
+}
+.small-navbar{
+    height: 400px;
+    width: 100vw;
+     background-image: linear-gradient(rgba(138, 209, 195, 0.222),rgb(194, 219, 220));
+     /* transition: 1s; */
+    /* background-image:; */
+    /* filter: blur(1px); */
+    /* --tw-backdrop-blur: blur(16px); */
+    /* font-size: 200px !important; */
+    display: flex;
+}
+
+/* ****************************************************************************section1 - guddda********************************************************* */
+.section{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 700px;
+    /* border: 2px solid red; */
+    padding: 50px;
+}
+
+.View-course{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ background-color: rgb(109, 109, 226);
+ border: 1px solid rgb(103, 108, 149);
+ width: 200px;
+ height: 50px;
+ border-radius: 3px;
+}
+.Watch-video{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ /* background-color: rgb(109, 109, 226); */
+ border: 1px solid rgb(103, 108, 149);
+ width: 200px;
+ height: 50px;
+ border-radius: 3px;
+}
+.View-course a{
+    font-weight: bold;
+ font-size:large;
+    color: white;
+}
+
+.Watch-video a{
+    font-weight: bold;
+ font-size:large;
+    color: black;
+}
+.navabar-icon{
+    height: 35px;
+    width: 200px;
+}
+.gudda1{
+    height: 460px;
+    width: 573px;
+    padding-top: 40px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    /* height:400px; */
+    padding: 40px;
+    /* align-content: end; */
+    /* align-items: center; */
+}
+.name1{
+    font-size: 50px;
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2px;
+    flex-direction: row;
+}
+.name{
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    justify-content: start;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.course{
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+}
+.navabar-link2{
+    list-style: none;
+    text-decoration: none;
+}
+.componant2{
+    
+    padding: 20px;
+    margin-left: 80px;
+    /* margin-right: 40px; */
+    margin-right: auto;
+    justify-content: center;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: column;
+    
+}
+.componant1{
+    
+    padding: 20px;
+    margin-right: 40px;
+}
+.Learn{
+    flex-wrap: wrap;
+    /* position: relative; */
+    font-size: 50px;
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+}
+.with{
+    font-size: 50px;
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+}
+.name2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: rgb(54, 51, 51);
+}
+.love-babbar{
+    font-size: 50px;
+    font-family: Rubik,sans-serif;
+    scroll-behavior: smooth;;
+    font-weight: bold;
+}
+.section{
+    background-image: linear-gradient(45deg,white,rgb(225, 126, 200));
+    /* height: 300px; */
+}
+.student-img{
+display: flex;
+}
+.student{
+display: flex;
+/* flex-wrap: wrap; */
+justify-content: start;
+align-items: center;
+gap: 20px;
+}
+.students{
+/* display: flex; */
+height: 50px;
+width: 50px;
+border-radius: 90px;
+margin-left: -10px;
+}
+.happy-student{
+  font-size: 15px;
+}
+/* *********************************section gudda *************************************************** */
+.social-media-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    
+background-color: rgb(57, 57, 152);
+
+}
+.socialmedia{
+/* height: 110px;/ */
+/* width: 1010px;/ */
+width: 1000px;
+height: 200px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-content: space-around;
+align-items: center;
+gap: 50px;
+/* height: 100%; */
+color: white;
+background-color: rgb(57, 57, 152);
+}
+#social1{
+    
+height: 50%;
+width: 90px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 50px;
+color: white;
+background-color: rgb(57, 57, 152);
+}
+#social2{
+height: 50%;
+width: 90px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 50px;
+color: white;
+background-color: rgb(57, 57, 152);
+}
+.social{
+border-right: 2px solid white;
+padding-right: 15px;
+}
+.Followers{
+font-size: 30px;
+font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+}
+.platform{
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.why-section{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid rgb(241, 237, 237);
+    padding: 90px;
+}
+.discuss1{
+    font-size:large;
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+    color: rgb(51, 51, 136);
+}
+.discuss2{
+    font-size:40px;
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+}    
+/* ******************************** content box section *********************** */
+.contant-section-head{
+    padding: 2px;
+
+padding-bottom: 50px;
+    display: flex;
+    width: 100vw;
+    
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    /* color: red; */
+}
+.grid-box-1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-box-3{
+    display: flex;
+  flex-wrap: wrap;
+  }
+.content-section{
+    justify-items: center;
+    display: grid;
+ 
+    background-color: aliceblue;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 25px;
+    background-color: aliceblue;
+}
+.box{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    width: 380px;
+    border: 2px solid rgb(232, 225, 225);
+    transition: 1s;
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+}
+.grid2{
+    display: flex;
+    flex-direction: row;
+}
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 1;
+}
+.box-content{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 282px;
+    width: 300px;
+    /* border: 2px solid red; */
+}
+.content-icon{
+    border-radius: 40px;
+    height: 50px;
+    width: 50px;
+}
+.content-name{
+    text-decoration: solid;
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+    /* font-family:; */
+    text-shadow: 100%;
+}
+.decription{
+    color: rgb(86, 80, 80);
+}
+#box1{
+    border-bottom: 3px solid green;
+}
+#box2{
+    border-bottom: 3px solid rgb(26, 38, 164);
+}
+#box3{
+    border-bottom: 3px solid rgb(194, 168, 0);
+}
+#box4{
+    border-bottom: 3px solid rgb(130, 17, 113);
+}
+#box5{
+    border-bottom: 3px solid rgb(9, 76, 164);
+}
+#box6{
+    border-bottom: 3px solid rgb(63, 180, 100);
+}
+/* ***************************************MEET INSTRUCTOR SECTION ***************************************************** */
+.meet-instructor-head{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.meet-instructor{
+    width: 1200px;
+    border-bottom: 1px solid rgb(129, 127, 127);
+    /* border: 2px solid black; */
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    gap: 80px;
+}
+.flexbox{
+display: flex;
+/* width: 400px; */
+/* height: 40px; */
+background-color:white;
+justify-content: space-between;
+align-items: center;
+}
+.item{
+    font-size: 42px;
+}
+.item-class{
+    display: flex;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.item-class-child-1{
+    display: flex;
+    gap: 10px;
+}
+.item-class-child-2{
+    color: rgb(95, 95, 194);
+}
+.btn-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 106.6px;
+     height: 37.2px;
+     border-radius: 4px;
+     background-color: blue;
+     
+}
+.btn-class a{
+    color: white;
+    text-decoration: none;
+}
+.love-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.love-pic{
+    display: flex;
+    flex-direction: column;
+}
+.love1{
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   font-weight: bold;
+    margin-left: 90px;
+}
+.founder{
+    margin-left: 70px;
+    font-family: Rubik,sans-serif;
+   scroll-behavior: smooth;;
+   /* font-weight: bold; */
+   color: rgb(61, 55, 55);
+}
+.componis{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.amazon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mircosoft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.google{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compony-status{
+    color: rgb(89, 80, 80);
+}
+/* **********************************PLACEMENT-OFFER-SECTION-************************************************************************************************** */
+
+.placement-offer-section-head{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.placement-offer-section{
+
+    /* border:1px solid rgb(78, 77, 77); */
+    height: 400px;
+    width: 1200px;
+    background-color:white;
+    display: flex;
+    overflow: hidden;
+    
+    /* grid-template-columns: 1; */
+    /* grid-template-columns: repeat(2,1fr); */
+}
+.placement-offer{
+    overflow: hidden;
+width: 100%;
+height: 100%;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.round-circle-section{
+    position: relative;
+    z-index: 90;
+    overflow: hidden;
+width: 100%;
+/* border: 2px solid red; */
+display: flex;
+/* display: flex; */
+justify-content: center;
+align-items: center;
+/* height: 200px; */
+}
+.temp-box{
+display: flex;
+flex-direction: column;
+/* border:2px solid black ; */
+height: 200px;
+width: 300px;
+justify-content: space-evenly;
+/* flex-direction: column; */
+/* background-color: black; */
+}
+.placement-offer{
+display: flex;
+flex-direction: column;
+}
+.get-offer{
+display: flex;
+flex-direction: column;
+}
+.placement{
+    color: rgb(150, 150, 228);
+    font-size: 20px;
+}
+.text-2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.text-3{
+    font-size: 13px;
+    color: rgb(112, 94, 94);
+}
+/* *************************************************animation -desing  ****************************************************************************************/
+.round-box-img{
+/* border: 1px solid black; */
+/* border-radius:400px; */
+height: 100px;
+width: 100px;
+}
+.round-box-child-1{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: start;
+
+/* border: 2px solid black; */
+}
+.round-box-child-2{
+display: flex;
+justify-content: space-between;
+/* border: 2px solid black; */
+}
+.round-box-child-3{
+display: flex;
+justify-content: center;
+align-items: center;
+/* border: 2px solid black; */
+}
+.round-box-child-child-1{
+gap: 40px;
+display: flex;
+/* justify-content: start; */
+flex-direction: column;
+}
+
+.round-box-child-child-3{
+gap: 40px;
+   display: flex;
+     flex-direction: column;
+     /* justify-content: end; */
+     /* align-items: end; */
+
+}
+
+.round-box-apple,.round-box-microsoft,.round-box-Netflix,.round-box-amazon {
+animation: apple-roate 20s linear infinite ;
+}
+.round-box-child-child-2{
+/* margin-top: 10px; */
+background-color: rgb(187, 187, 234);
+display: flex;
+border-radius: 200px;
+height: 250px;
+width:250px;
+justify-content: center;
+align-items: center;
+   animation: round-box-child-reverse-rotate 20s linear infinite;
+border: 2px solid black;
+}
+.round-box-child-child-child-1{
+background-color: white;
+display: flex;
+border-radius: 200px;
+height: 60%;
+width:60%;
+border: 2px solid black;
+}
+.round-box{
+
+/* position: relative; */
+display: flex;
+/* align-self: center; */
+flex-direction: column;
+/* width: 200px; */
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 70%;
+background-color: white;
+border-radius: 1200px;
+/* animation: 3s ease-in 1s 2 reverse both paused slidein; */
+ animation: round-box-parent 35s linear infinite;
+ animation-delay: 0ms;
+ transition: all;
+/* transition-duration:100ms; */
+transition: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes round-box-parent {
+0%{
+transform:rotate(0deg);
+}
+100%{
+    transform:rotate(360deg);
+}
+}
+@keyframes apple-roate {
+0%{
+    transform: rotate(0deg);
+}
+50%{
+    transform: rotate(50deg);
+}
+100%{
+    transform:rotate(100deg);
+}
+
+}
+@keyframes round-box-child-reverse-rotate {
+0%{
+transform:rotate(0deg);
+}
+100%{
+    transform:rotate(-360deg);
+}
+}
+/* ********************************************************************supreme 20 section ****************************************************************************/
+.current-course-section{
+          display: flex;
+          font-weight: bold;
+          gap: 20px;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 500px;
+          background-color:#eaecf7;;
+          border-bottom: rgb(85, 83, 83);
+          /* --tw-ring-color: rgba(59,130,246,.5); */
+}
+.learn{
+    color: rgb(92, 92, 192);
+}
+.current-course-text1{
+
+     display: flex;
+     gap: 5px;
+     justify-content: center;
+     align-items: center;
+     font-size: 25px;
+}
+.supreme-20-section{
+    color: black;
+    /* justify-content: center; */
+    /* text-align: center; */
+    border-radius: 10px;
+    display: flex;
+    height:310px;
+    width: 340px;
+    background-color:white;
+}
+.Launch_Video_Thumbnail{
+    padding: 10px 15px 0px  15px;
+    width: 340px;
+    height:180px;
+    border-radius: 25px;
+}
+.supreme-20-pic{
+    border-radius: 10px;
+}
+.suprem-20-box{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+    padding-bottom: 10px;
+}
+.course-name-box{
+    padding-left: 15px;
+    display: flex;
+     font-weight: bold;
+    flex-direction: column;
+}
+.course-off{
+    display: inline;
+    color: white;
+    font-weight: bold;
+    background-color:rgb(47, 55, 170);
+     /* background-image: linear-gradient(45deg,rgb(133, 29, 29),rgb(11, 2, 110)); */
+    border: 1px solid black;
+}
+.course-current-price{
+    color: rgb(48, 48, 193);
+}
+.course-orgigin-price{
+    text-decoration:line-through ;
+}
+.course-price-box{
+    padding-left: 15px;
+    display: flex;
+    gap: 10px;
+}
+/********************************************** recourded course section***************************************************************  *************************************/
+.recorded-course{
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 100vw;
+    background-color:#eaecf7;;
+}
+.course-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    /* justify-content: space-between; */
+}
+.course-name-recourde{
+    font-size: 35px;
+    font-weight: bold;
+}
+/* **************************************************join coding famaly section ********************************************************************************************** */
+.join-coding-famaly-head{
+    /* position: absolute; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* border: 2px solid black; */
+}
+.join-coding-famaly{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 1200px;
+    /* border: 1px solid red; */
+}
+.join-coding-platform{
+
+    display: grid;
+    
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* background-color: blue; */
+    height: 200px;
+    width: 700px;
+
+}
+.join-coding-famaly-heading{
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-coding-famaly-description{
+    position: absolute;
+    font-family: Rubik,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(60, 58, 58);
+}
+.youtube-icon,.telegram-icon,.descord-icon,.linkdin-icon{
+    height: 100px;
+    width: 100px;
+}
+.head,.youtube,.telegram,.linkdin,.descord{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.youtube{
+    color: red;
+}
+.linkdin{
+    color: rgb(12, 157, 157);
+}
+.descord{
+    color:cornflowerblue;
+}
+.telegram{
+    color: rgb(69, 69, 194);
+}
+/****************************************************** RESPNOSIVE DESIGN   *************************************************************************************************************************/
+@media (max-width:1050px) {
+    
+    .section{
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 500px;
+        /* border: 2px solid red; */
+        padding: 100px;
+    }
+    .componant2{
+        margin-left: 30px;
+    }
+    .View-course{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid rgb(63, 74, 156);
+     width: 200px;
+     height: 50px;
+     border-radius: 3px;
+    }
+    .flexbox1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid rgb(63, 74, 156);
+     width: 100px;
+     height: 25px;
+     border-radius: 3px;
+     font-size: small;
+    }
+    .flexbox2{
+        display: flex;
+        color: white;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid rgb(13, 32, 179);
+     background-color: rgb(113, 113, 219);
+     width: 100px;
+     /* font-size: small; */
+     height: 25px;
+     border-radius: 2px;
+    }
+    .flexbox2 a{
+        color: white;
+    }
+    #DashBoard{
+        display: none;
+    }
+    #login{
+        display: none;
+    }
+    .navabar-icon{
+        height: 35px;
+        width: 200px;
+    }
+    .gudda1{
+        margin-right: 20px;
+        height: 350px;
+        width: 400px;
+        min-height: 100%;
+        max-height: 100%;
+        padding-top: 40px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        /* height:400px; */
+        padding: 40px;
+        /* align-content: end; */
+        /* align-items: center; */
+    }
+    .name1{
+        /* font-size: 40px; */
+        justify-content: start;
+        text-align: center;
+        display: flex;
+        gap: 2px;
+        flex-direction: row;
+    }
+    .name{
+        justify-content: start;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .course{
+        justify-content: start;
+        text-align: center;
+        display: flex;
+        gap: 20px;
+    }
+    .navabar-link2{
+        list-style: none;
+        text-decoration: none;
+    }
+    .componant2{
+        padding: 20px;
+        padding-top: 60px;
+        justify-content: center;
+        text-align: start;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        
+    }
+    .Learn{
+        font-size: 30px;
+        font-family: Rubik,sans-serif;
+       scroll-behavior: smooth;;
+       font-weight: bold;
+    }
+    .with{
+        font-size: 30px;
+        font-family: Rubik,sans-serif;
+       scroll-behavior: smooth;;
+       font-weight: bold;
+    }
+    .name2{
+        font-size: 25px;
+        color: rgb(54, 51, 51);
+    }
+    .love-babbar{
+        font-size: 30px;
+        font-family: Rubik,sans-serif;
+        scroll-behavior: smooth;;
+        font-weight: bold;
+    }
+    .section{
+        background-image: linear-gradient(45deg,white,rgb(225, 126, 200));
+        /* height: 300px; */
+    }
+    .student-img{
+    display: flex;
+    }
+    .student{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    }
+    .students{
+    /* display: flex; */
+    height: 50px;
+    width: 50px;
+    border-radius: 90px;
+    margin-left: -10px;
+    }
+    .happy-student{
+      font-size: 15px;
+    }
+    .View-course a{
+        font-weight: bold;
+     font-size:small;
+        color: white;
+    }
+    
+    .Watch-video a{
+        font-weight: bold;
+     font-size:small;
+    }
+    .View-course{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     background-color: rgb(109, 109, 226);
+     border: 1px solid rgb(103, 108, 149);
+     width: 129px;
+     height: 37px;
+     font-size: small;
+     border-radius: 3px;
+    }
+    .Watch-video{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-size: small;
+     /* background-color: rgb(109, 109, 226); */
+     border: 1px solid rgb(103, 108, 149);
+     width: 129px;
+     height: 37px;
+     border-radius: 3px;
+    }
+}
+@media (min-width:850px) {
+    .small-navbar-head{
+        position: absolute;
+        opacity: 0;
+        /* display: none; */
+    }
+}
+@media (max-width:850px) {
+    .View-course a{
+        font-weight: bold;
+     font-size:small;
+        color: white;
+    }
+    
+    .Watch-video a{
+        font-weight: bold;
+     font-size:small;
+    }
+    .View-course{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     background-color: rgb(109, 109, 226);
+     border: 1px solid rgb(103, 108, 149);
+     width: 129px;
+     height: 37px;
+     font-size: small;
+     border-radius: 3px;
+    }
+    .Watch-video{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-size: small;
+     /* background-color: rgb(109, 109, 226); */
+     border: 1px solid rgb(103, 108, 149);
+     width: 129px;
+     height: 37px;
+     border-radius: 3px;
+    }
+    .componant2{
+        margin-left: 40px;
+        margin-right: 40px;
+         /* margin: 30px; */
+        padding: 20px;
+        /* margin-left: 40px; */
+        margin-right: auto;
+        justify-content: center;
+        text-align: start;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        flex-direction: column;
+        
+    }
+    .componant1{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .Learn{
+        flex-wrap: wrap;
+        /* position: relative; */
+        font-size: 30px;
+        font-family: Rubik,sans-serif;
+       scroll-behavior: smooth;;
+       font-weight: bold;
+    }
+    .with{
+        font-size: 30px;
+        font-family: Rubik,sans-serif;
+       scroll-behavior: smooth;;
+       font-weight: bold;
+    }
+    .name1{
+        gap: 10px;
+    }
+    .name2{
+        display: flex;
+        flex-wrap: wrap;
+
+        font-size: 20px;
+        color: rgb(54, 51, 51);
+    }
+    .love-babbar{
+        font-size: 30px;
+        font-family: Rubik,sans-serif;
+        scroll-behavior: smooth;;
+        font-weight: bold;
+    }
+    .navbar-head{
+        position: relative;
+    }
+    .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 80%;
+        border: 2px solid red;
+        padding: 10px;
+    }
+    
+    .content-section{
+        justify-items: center;
+        display: grid;
+        background-color: aqua;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* justify-items: center; */
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 25px;
+        background-color: aliceblue;
+    }
+    .navbar-list_item{
+    /* opacity: 0; */
+    /* padding-top: 40px; */
+    background-size:cover;
+    width: 100%;
+    height: 30vh;
+    /* background-image: linear-gradient(white,rgb(157, 157, 214)); */
+    background-color:transparent;
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transform:  translateX(100%);
+    transition:all  0.1s linear;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 100px;
+    padding-left: 100px;
+    pointer-events: none  ;
+
+}
+.header{
+    position:  relative;
+}
+.mobile_navr-btn{
+    z-index: 999;
+    display: block;
+}
+ .active .small-navbar-head{
+    display: flex;
+   /* transform: translateX(0); */
+   /* opacity:1; */
+   /* pointer-events: visible; */
+   /* visibility: visible; */
+   /* height:100vh; */
+   /* gap: 10px; */
+   /* font-size: small; */
+} */
+ .navabar-link{
+    font-size: 10px;
+    font-weight: 50;
+    color: black;
+}
+
+#DashBoard{
+    display: block;
+}
+#login{
+    display: block;
+
+}
+.navbar-list_item2{
+    display: none;
+}
+.active .mobile_navr-btn .mobile_navr-icon[name="close-circle-outline"]{
+    display: block;
+}
+.active .mobile_navr-btn .mobile_navr-icon[name="apps-outline"]{
+    display: none;
+}
+.container{
+    flex-direction: column-reverse;
+}
+.gudda1{
+    height:100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.componant2{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.navbar-list_item{
+    margin: -40px;
+}
+.socialmedia{
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.discuss2{
+    font-size:20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}    
+.componis{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.main-heading{
+    font-size: 24px;
+    /* color: white; */
+}
+ .meet-instructor{
+
+    padding: 20px;
+ }
+ .item{
+font-size: 24px;
+}
+.placement-offer-section{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.round-circle-section{
+    height: 100%;
+    width: 100%;
+}
+.temp-box{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid black ; */
+    overflow: hidden;
+    height: 110px;
+    width: 300px;
+    gap: 5px;
+    /* justify-content:space-around; */
+    /* flex-direction: column; */
+    /* background-color: black; */
+    }
+    .placement-offer{
+        display: flex;
+        flex-direction: column;
+        }
+        .get-offer{
+        display: flex;
+        flex-direction: column;
+        }
+        .placement{
+            color: rgb(150, 150, 228);
+            font-size: 20px;
+        }
+        .text-2{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .text-3{
+            font-size: 13px;
+            color: rgb(112, 94, 94);
+        }
+    .placement-offer{
+       
+    margin: 20px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: start; 
+     align-items: start; 
+    }
+    .round-box{
+
+        /* position: relative; */
+        display: flex;
+        /* align-self: center; */
+        flex-direction: column;
+        /* width: 200px; */
+        justify-content: center;
+        align-items: center;
+        height: 800%;
+        width: 50%;
+        background-color: white;
+        border-radius: 1200px;
+        /* animation: 3s ease-in 1s 2 reverse both paused slidein; */
+         animation: round-box-parent 35s linear infinite;
+         animation-delay: 0ms;
+         transition: all;
+        /* transition-duration:100ms; */
+        transition: 5s;
+        animation-iteration-count: infinite;
+        }
+        
+.course-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    /* justify-content: space-between; */
+}
+.recorded-course{
+    height: 800px;
+}
+.Followers{
+    font-size: 20px;
+    font-family: Rubik,sans-serif;
+       scroll-behavior: smooth;;
+       font-weight: bold;
+    }
+    .platform{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
+@media (max-width:1250px) {
+    .content-section{
+        justify-items: center;
+        display: grid;
+        background-color: aqua;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* justify-items: center; */
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 25px;
+        background-color: aliceblue;
+    }
+}
+/* **************************************************join coding famaly section ********************************************************************************************** */
+@media (max-width:800px) {
+    *{
+        scroll-behavior: smooth;
+    }
+.join-coding-famaly-head{
+    /* position: absolute; */
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute; */
+    display: flex;
+    /* display: grid; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* border: 2px solid black; */
+}
+.join-coding-famaly{
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 1200px;
+    /* border: 1px solid red; */
+}
+.join-coding-platform{
+  /* position:relative; */
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* grid-auto-rows: auto; */
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2,minmax(0,auto));
+    grid-template-rows: repeat(2,minmax(0,auto));
+    /* background-color: blue; */
+    height: 300px;
+    width: 700px;
+    /* border: 2px solid black; */
+
+}
+.join-our-coding-famaly{
+    /* position: absolute; */
+}
+.join-coding-famaly-heading{
+
+    /* position: relative; */
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.join-coding-famaly-description{
+    position: absolute;
+    font-family: Rubik,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: rgb(60, 58, 58);
+}
+.youtube-icon,.telegram-icon,.descord-icon,.linkdin-icon{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100px;
+}
+.head,.youtube,.telegram,.linkdin,.descord{
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.youtube{
+    color: red;
+}
+.linkdin{
+    color: rgb(12, 157, 157);
+}
+.descord{
+    color:cornflowerblue;
+}
+.telegram{
+    color: rgb(69, 69, 194);
+}
+}
+@media (max-width:740px) {
+    .content-section{
+        justify-items: center;
+        display: grid;
+        background-color: aqua;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* justify-items: center; */
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 25px;
+        background-color: aliceblue;
+    }
+}
+@media (max-width:600px) {
+    .gudda1{
+        width: 100%;
+        width: 400px;
+    }
+    .componant2{
+        /* padding: 20px; */
+        /* padding-top: 60px; */
+        margin-left: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .course{
+        margin-left: -100px;
+    }
+    .student{
+        margin-left: -40px;
+    }
+}
+@media (max-width:375px) {
+    .gudda1{
+        width: 300px;
+        height: 100%;
+        /* width: 400px; */
+    }
+    .componant2{
+        /* padding: 20px; */
+        /* padding-top: 60px; */
+        margin-left: 60px;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: start;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+    }
+    .love-babbar{
+        flex-wrap: wrap;
+        /* font-size: 20px; */
+    }
+    .course{
+        /* margin-left: 10px; */
+    }
+    .student{
+        /* margin-left: 10px; */
+    }
+   
+}
+@media (max-width:477px) {
+    .join-coding-platform{
+        /* position:relative; */
+          display: grid;
+          /* flex-wrap: wrap; */
+          /* grid-auto-rows: auto; */
+          column-gap: 10px;
+          row-gap: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          grid-template-columns: repeat(2,minmax(0,absolute));
+          grid-template-rows: repeat(2,minmax(0,absolute));
+          /* background-color: blue; */
+          height: 300px;
+          width: 400px;
+          border: 2px solid black;
+      
+      }
+}
+@media (max-width:371px) {
+    
+    .item-class{
+        flex-direction: column;
+    }
+    .flexbox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.round-box-child-child-child-1{
+    display: flex;
+    flex-wrap: wrap ;
+    display: flex;
+    justify-content: space-between;
+}
+.round-box-under-img{
+    height: 70px;
+    width: 70px;
+}
+.round-box-child-child-chilid-child-1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+@media (min-width:3000px) {
+    .round-box-under-img{
+        /* size: 0px; */
+        height: 60px;
+        width: 50px;
+    }
+}
+      </style>
+</head>
+<body>
+    <div class="navbar-head">
+        <header class="navbar">
+            <header class="header">
+                <div class=" header-div-class">
+                    <nav class=" navbar-class">
+                        <img class="navabar-icon" src="https://cdn.thecodehelp.in/qdo970k2vrxj8kefd1zt_9520ff468a.svg" >
+                          <ul class="navbar-list_item">
+                           <li><a class="navabar-link" href="#">About Us</a></li>
+                           <li><a class="navabar-link" href="#">Courses</a></li>
+                           <li><a class="navabar-link" href="#">Labs</a></li>
+                           <li><a class="navabar-link" href="#">Contacts</a></li>
+                           <li><a class="navabar-link" id = "DashBoard" href="#">DashBoard</a></li>
+                           <li><a class="navabar-link" id = "login" href="">Login</a></li>
+                        </ul>
+                        <ul class="navbar-list_item2">
+                             <div class="flexbox1">
+                                <li><a class="navabar-link2"  href="#">DashBoard</a></li>
+                             </div>
+                             <div  class="flexbox2">
+                                 <li><a  class="navabar-link2"  href="">Login <ion-icon name="log-in-outline"></ion-icon></a></li>
+                             </div>
+                        </ul>
+                         <div class="mobile_navr-btn">
+                            <ion-icon name="apps-outline" class="mobile_navr-icon"></ion-icon>
+                            <ion-icon name="close-circle-outline" class="mobile_navr-icon"></ion-icon>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            </header>
+    </div>
+    <div class="small-navbar-head">
+        <div class="small-navbar">
+            <ul class="navbar-list_item-1">
+                <li><a class="navabar-link2" href="#">About Us</a></li>
+                <li><a class="navabar-link2" href="#">Courses</a></li>
+                <li><a class="navabar-link2" href="#">Labs</a></li>
+                <li><a class="navabar-link2" href="#">Contacts</a></li>
+                <!-- <ul class="navbar-list_item-2"> -->
+                    <div class="small-flexbox1">
+                       <li><a class="navabar-link2"  href="#">DashBoard</a></li>
+                    </div>
+                    <div  class="small-flexbox2">
+                        <li><a  class="navabar-link2"  href="">Login <ion-icon name="log-in-outline"></ion-icon></a></li>
+                    </div>
+               <!-- </ul> -->
+             </ul>
+        </div>
+    </div>
+    <section class="section">
+          <div class="container">
+              <div class="componant2">
+                  <div class="name">
+                     <div class="name1">
+                        <div class="Learn">Learn</div>
+                        <div class="with">With</div>
+                        <div class="love-babbar">Babbar</div>
+                     </div>
+                     <div class="name2">
+                         <SDE>The Ultimate Guide To AceSDE Interviews.</h4>
+                     </div>
+                  </div>
+                  <div class="course">
+                    <div class="View-course">
+                        <span><a href="">View course</a></span>
+                    </div>
+                    <div class="Watch-video">
+                        <!-- <li><a class="navabar-link2"  href="#">Watchvideo</a></li> -->
+                        <span><a href="">Watch video</a></span>
+                    </div>
+                  </div>
+                  <div class="student">
+                     <div class="student-img">
+                        <img class="students" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fxjr5e4a59w60z0ak1d68_9ac99d9934.jpg&w=96&q=100" alt="">
+                        <img class="students"src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2F1665736772625_b861134636.jpg&w=96&q=100" alt="">
+                        <img class="students" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2F20220907_122714_e19e9a8b7a.png&w=96&q=100" alt="">
+                        <img class="students"src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2FScreenshot_2022_11_19_161704_fe89795d3e.png&w=96&q=100" alt="">
+                        <img class="students"src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2FIMG_9037_086d5a6a8b.jpg&w=96&q=100" alt="">
+                     </div>
+                     <div class="happy-student">
+                        <div> <b>20000+</b></div>
+                        <div>happy students</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="componant1">
+                <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fbzfszobhjsgbjk2xb2ha_275f4fb989.png&w=3840&q=75" alt="" class="gudda1">
+            </div>
+          </div>
+    </section>
+   <div class="social-media-head">
+    <section class="socialmedia">
+        <div id="social1">
+            <div class="social">
+                <p class="Followers">900+</p>
+                <p class="platform">Subscribers</p>
+                <p class="platform">on YouTube</p>
+            </div>
+            <div class="social">
+                <p class="Followers">4k+</p>
+                <p class="platform">Followers</p>
+                <p class="platform">on Twitter</p>
+            </div>
+        </div>
+        <div id="social2">
+            <div class="social">
+                <p class="Followers">100+</p>
+                <p class="platform">Followers</p>
+                <p class="platform">on Instagram</p>
+            </div>
+            <div class="social">
+                <p class="Followers">410+</p>
+                <p class="platform">Followers</p>
+                <p class="platform">on Linkdin</p>
+            </div>
+        </div>
+    </section>
+   </div>
+    <div class="why-section">
+          <div class="discuss1">WHY CODE-HELP?</div>
+          <div class="discuss2">Making learning easier and</div>
+          <div class="discuss2">more convenient for you.</div>
+    </div>
+    <div class="contant-section-head">
+        <div class="content-section">
+            <div class="box" id="box1">
+                <div class="box-content" >
+                    <img class = "content-icon" src="https://img.favpng.com/11/17/14/data-structure-logo-brand-png-favpng-SiHV4dTHEtkiit6Uf0F405XNv.jpg" alt="">
+                    <span class="content-name">Data Structure</span>
+                    <div class="decription">Data structures are the problem-solving pillars of coding. Learn all the foundational knowledge about all of the popular data structure that you need, to be well-versed in interviews.</div>
+                </div>
+            </div>
+            <div class="box" id="box2">
+                <div class="box-content">
+                    <img class = "content-icon" src="https://th.bing.com/th/id/OIP.660CSa0czmmaM1L1AAPzvAHaHB?pid=ImgDet&rs=1" alt="">
+                    <span class="content-name">Placement Preparation</span>
+                    <div class="decription">Ace the placement interviews by being knowledgeable in all well-known data structures, popular problem-solving methods, and core computer sciences.</div>
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="box-content">
+                    <img class = "content-icon" src="https://th.bing.com/th/id/OIP.7pIDA2FsT7V3RPSEXnBAlwAAAA?pid=ImgDet&w=340&h=340&rs=1" alt="">
+                    <span class="content-name">Hand Picked Question</span>
+                    <div class="decription">Get access to hand-picked coding interview questions across categories & difficulty levels that will prepare you for every interview you would encounter.</div>
+                </div>
+            </div>
+            <div class="box" id="box4">
+                <div class="box-content">
+                    <img class = "content-icon" src="https://i.pinimg.com/originals/98/96/30/9896304aad4ee409f7e8b60807514948.png" alt="">
+                    <span class="content-name">Curated Content</span>
+                    <div class="decription">Learn in-depth conceptual overviews, how to approach an algorithm, how to implement it & how to optimize it.</div>
+                </div>
+            </div>
+            <div class="box" id="box5">
+                <div class="box-content">
+                    <img class = "content-icon" src="https://th.bing.com/th/id/OIP.660CSa0czmmaM1L1AAPzvAHaHB?pid=ImgDet&rs=1" alt="">
+                    <span class="content-name">Learn from the best</span>
+                    <div class="decription">Get access to lectures and get mentored by one of the best in the market, Love Babbar.</div>
+                </div>
+            </div>
+            <div class="box" id="box6">
+                <div class="box-content">
+                    <img class = "content-icon" src="https://th.bing.com/th/id/OIP.660CSa0czmmaM1L1AAPzvAHaHB?pid=ImgDet&rs=1" alt="">
+                    <span class="content-name">Learn Something new</span>
+                    <div class="decription">Learn new concepts daily, increase your productivity & reach your full potential.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="meet-instructor-head">
+        <div class="meet-instructor">
+            <div class="flexbox">
+                <div class="item-class">
+                     <div class="item-class-child-1">
+                        <span class="item">Meet</span>
+                        <span class="item">Your</span>
+                     </div>
+                     <div class="item-class-child-2">
+                        <span class="item">Instructor</span>
+                     </div>
+                </div>
+                 <div class="btn-class">
+                    <span> <a href=""> Know more</a></span>
+                 </div>
+            </div>
+            <div class="love-icon">
+                <div class="love-pic">
+                     <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2FEllipse_392_6b9d901d07.png&w=2048&q=75" class="love" alt="">
+                     <span class="love1">Love babbar</span>
+                     <span class="founder">Founder,CodeHelp</span>
+                </div>
+            </div>
+            <div class="componis">
+                <div class="amazon">
+                    <img src="https://codehelp.s3.ap-south-1.amazonaws.com/kisspng_amazon_com_logo_retail_brand_publishing_chat_room_logo_5ae868f5383535_1_a6b41bc3a9.png" alt="" class="amazon-icon">
+                    <span class="compony-status">Ex-Amazon, SWE</span>
+                </div>
+                <div class="mircosoft">
+                    <img src="https://codehelp.s3.ap-south-1.amazonaws.com/microsoft_logo_png_2398_1_6587a84ffc.png" alt="" class="mircosoft-icon">
+                    <span class="compony-status">
+                        Ex-Microsoft, SWE
+                    </span>
+                </div> <div class="google">
+                    <img src="https://codehelp.s3.ap-south-1.amazonaws.com/pngegg_1_1_51b5432954.png" alt="" class="google-icon">
+                    <span class="compony-status">
+                        Google ASC, India
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="placement-offer-section-head">
+    <div class="placement-offer-section">
+        <div class="placement-offer">
+           <div class="temp-box">
+               <span class="placement">Placement</span>
+                <div class="get-offer">
+                   <span class="text-2">Get Offers from</span>
+                   <span class="text-2">Top Companies</span>
+                </div>
+                <div class="top-notch">
+                  <span class="text-3"> Our finest get offers from top-notch companies.</span>
+                </div>
+           </div>
+       </div> 
+       <div class="round-circle-section">
+          <div class="round-box">
+               <div class="round-box-child-1">
+                <div class="round-box-apple apple apple-upper">
+                    <img class="round-box-img" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Ffx1yuctlyb6qv5vcui5c_78aba1cc2a.png&w=1920&q=75" alt="" class="round-box-apple-icon">
+              </div>
+               </div>
+               <div class="round-box-child-2">
+                   <div class="round-box-child-child-1">
+                    <div class="round-box-mircrosoft microsoft">
+                        <img class="round-box-img"  src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fboapgmfhnhmfnndgqagu_00d47f7d84.png&w=1920&q=75" alt="" class="round-box-mircrosoft-icon">
+                </div>
+                <div class="round-box-meta meta">
+                    <img class="round-box-img" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fcdjndvdrbe0riikypusi_f5726f36f2.png&w=2048&q=75" alt="" class="round-box-meta-icon">
+                </div>
+                   </div>
+                    <div class="round-box-child-child-2">
+                          <div class="round-box-child-child-child-1">
+                                <div class="round-box-child-child-chilid-child-1">
+                                   <div class="round-box-under-1">
+                                       <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fd2vqxmvfziqcf21is5gh_08116fc328.png&w=1200&q=75" alt="" class="round-box-under-img">
+                                    </div>
+                                    <div class="round-box-under-2">
+                                       <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fzif4s9vnfj2mi8kgpksa_a578a281f5.png&w=1200&q=75" alt="" class="round-box-under-img">
+                                    </div>
+                                </div>
+                                <div class="round-box-child-child-chilid-child-1">
+                                   <div class="round-box-under-3">
+                                   
+                                       <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fdoiz1t2gzivmgj9mmrlu_d856e1a02d.png&w=1200&q=75" alt="" class="round-box-under-img">
+                                    </div>
+                                    <div class="round-box-under-4">
+                                       <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fkgcmgzbg6bxyrkaj5stv_7f859fcc30.png&w=1200&q=75" alt="" class="round-box-under-img">
+                                    </div>
+                                    
+                                </div>
+                          </div>
+                    </div>
+                   <div class="round-box-child-child-3">
+                    <div class="round-box-Netflix Netflix">
+                        <img class="round-box-img" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fsjqxdtjtzxz4kjjtpyqx_3e6eba6f99.png&w=2048&q=75" alt="" class="round-box-Netflix-icon">
+                </div>
+                <div class="round-box-amazon amazon">
+                        <img class="round-box-img" src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Ffaonnvzgrznbyj5z1gaq_43760505f1.png&w=2048&q=75" alt="" class="round-box-amaozon-icon">
+                </div>
+                   </div>
+               </div>
+               <div class="round-box-child-3">
+                <div class="round-box-google google">
+                    <img class="round-box-img" src = https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcdn.thecodehelp.in%2Fukiqud92f4nzkdmkzue0_8efbcaee62.png&w=1920&q=75" alt="" class="round-box-google-icon">
+                </div> 
+               </div>
+        </div> 
+       </div>
+   </div>
+  </div>
+
+    <div class="current-course-section">
+        <div class="current-course-text1">
+            <span class="learn-class">What would you like to learn?</span>
+        </div>
+       <a href="#">
+        <div class="supreme-20-section">
+            <div class="suprem-20-box">
+               <div class="supreme-20-pic">
+                  <img class="Launch_Video_Thumbnail" src="https://dgyugonj9a9mu.cloudfront.net/Launch_Video_Thumbnail_3_9d5264de01.jpg" alt="" class="supreme-pic">
+               </div>
+               <div class="course-name-box">
+                  <span class="course-name">Data Structures & Algorithms</span>
+                  <span class="course-name">BootCamp @Supreme-2.0</span>
+               </div>
+               <div class="course-price-box">
+                  <span class="course-current-price">₹3600
+                      </span>
+                  <span class="course-orgigin-price">
+                      ₹7000</span>
+                  <span class="course-off">50% off</span>
+               </div>
+            </div>
+      </div>
+       </a>
+    </div>
+    <div class="recorded-course">
+        <div class="recourded-course-name">
+            <span class="course-name-recourde">Recorded Courses</span>
+        </div>
+        <div class="course-container">
+            <div class="dot-batch">
+                <div class="recourded-course-section">
+                   <a href="#">
+                    <div class="supreme-20-section">
+                        <div class="suprem-20-box">
+                           <div class="supreme-20-pic">
+                              <img class="Launch_Video_Thumbnail" src="https://codehelp.s3.ap-south-1.amazonaws.com/Web_Dev_670f900667.jpg" alt="" class="supreme-pic">
+                           </div>
+                           <div class="course-name-box">
+                              <span class="course-name">Web Development Master</span>
+                              <span class="course-name">Course @dot Batch
+                            </span>
+                           </div>
+                           <div class="course-price-box">
+                              <span class="course-current-price">₹3600
+                                  </span>
+                              <span class="course-orgigin-price">
+                                  ₹7000</span>
+                              <span class="course-off">50% off</span>
+                           </div>
+                        </div>
+                  </div>
+                   </a>
+                </div>
+            </div>
+            <div class="supreme-batech">
+                <div class="recourded-course-section">
+                    <!-- <div class="current-course-text1">
+                        <span class="learn-class">What would you like to </span>
+                        <span class="learn"> learn?</span>
+                    </div> -->
+                   <a href="#">
+                    <div class="supreme-20-section">
+                        <div class="suprem-20-box">
+                           <div class="supreme-20-pic">
+                              <img class="Launch_Video_Thumbnail" src="https://dgyugonj9a9mu.cloudfront.net/63ac9183e4b0f1067f1b7b32_scaled_cover_e7f77a49f7.jpg" alt="" class="supreme-pic">
+                           </div>
+                           <div class="course-name-box">
+                              <span class="course-name">Data Structures & Algorithms</span>
+                              <span class="course-name">BootCamp @Supreme Batch</span>
+                           </div>
+                           <div class="course-price-box">
+                              <span class="course-current-price">₹3600
+                                  </span>
+                              <span class="course-orgigin-price">
+                                  ₹7000</span>
+                              <span class="course-off">50% off</span>
+                           </div>
+                        </div>
+                  </div>
+                   </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="join-coding-famaly-head">
+        <div class="join-coding-famaly">
+            <div class="join-coding-famaly-text-header">
+                <div class="join-coding-famaly-heading">
+                    <span class="join-our-coding-famaly">Join our Coding family</span>
+                </div>
+                  <div class="join-coding-famaly-description">
+                   <span>
+                        If you would like to keep up on the latest posts and courses,
+                    </span>
+                    <span>come by and connect with us on the following links.</span>
+                  </div>
+            </div>
+            <div class="join-coding-platform">
+                <div class="head">
+                    <div class="youtube">
+                       <a href=""> <img  src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2FYoutube_Oct_Denoiser_Beauty_001_copy_6a63d8ef65.png&w=1920&q=75" alt="" class="youtube-icon"></a>
+                        <span class="youtube-name">YouTube</span>
+                    </div>
+                </div>
+                <div class="head">
+                    <div class="telegram">
+                       <a href=""> <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2FLinked_In_Oct_Denoiser_Beauty_001_copy_b6e0b974bb.png&w=1920&q=75" alt="" class="telegram-icon"></a>
+                        <span class="telegram-name">Telegram</span>
+                    </div>
+                </div>
+                <div class="head"> 
+                    <div class="descord">
+                  <a href="">  <img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2FDiscord_Oct_Denoiser_Beauty_001_copy_a253ed4d28.png&w=1920&q=75" alt="" class="descord-icon"></a>
+                    <span class="descord-name">Discord</span>
+                </div></div>
+                <div class="head">
+                    <div class="linkdin">
+                        <a href=""><img src="https://www.thecodehelp.in/_next/image?url=https%3A%2F%2Fcodehelp.s3.ap-south-1.amazonaws.com%2FTelegram_Oct_Denoiser_Beauty_002_copy_fa9aeac119.png&w=1920&q=75" alt="" class="linkdin-icon"></a>
+                        <span class="linkdin-name">LinkedIn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="index.js"></script>
+<script>
+   const navbar_btn = document.querySelector(".mobile_navr-btn");
+const header_nav = document.querySelector(".header");
+let toggle_navbar = document.querySelector(".small-navbar-head");
+
+const toggleNav = () => {
+    if (toggle_navbar.style.display != 'flex') {
+        toggle_navbar.style.display = 'flex';
+      //   toggle_navbar.style.position = 'static';
+        
+    } else {
+        toggle_navbar.style.display = 'none';
+    }
+    header_nav.classList.toggle("active");
+}
+
+navbar_btn.addEventListener("click", toggleNav);
+
+</script>
+</html>
